@@ -1,0 +1,179 @@
+
+
+/* Buradaki hiç bir şey ChatGPT tarafından yapılmadı sadece öğrenmek için üşenmeden yazıyorum */
+
+/* Burası kök dizine işlenmiş bir kod */
+
+:root {
+
+    --hue-neutral: 200; 
+    /* hsl'de renk kodu olarak mavi */
+    --hue-wrong: 0;
+    /* Kırmızı */
+    --hue-correct: 145;
+    /* Yeşil */
+
+    --hue-duzenle: 46;
+    --hue-sil: 0;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    /* hue adlı bir değiken oluşturup belirlemiş olduğumuz nötr renki değer olarak atadık */
+    margin: 0;
+    /* üst kısımdaki ve iç kısımdaki boşlukları 0'a indirdik */
+    padding: 0;
+    display: flex;
+    /* Flex görünüm sayesinde hareket edebilir */
+    justify-content: center;
+    /* Eşyalarımızı merkeze koyduk */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* Site görünümü yükseklik ve genişliği */
+    background-color: hsl(var(--hue), 100%, 20%);
+    /* Arkaplan hsl rengine %100 saturation ve %20 parlaklık verdik*/
+
+}
+
+body.correct {
+    /* Body'e correct class'ı eklendiğinde rengi yeşile döndürecek */
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    /* Body'e wrong class'ı eklendiğinde rengi kırmızıya döndürecek. */
+    --hue: var(--hue-wrong);
+}
+
+.container{
+    /* Konteynır için özellikler */
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    /* Gölgelendirme */
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    /* Tuşlar için özellikler */
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    /* bir satırda 2 sütun ayarladık */
+    gap: 10px;
+    /* aralarında 10 piksel boşluk olacak */
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    outline: none;
+    /* Bunlar tuşlar için özellikler */
+
+}
+
+.btn:hover {
+    /* İmleç tuş üstüne geldiğinde sınır çizgisi siyahlaşacak */
+    border-color: black;
+}
+
+.btn.correct {
+    /* Eğer tuşa correct class'ı eklenirse yeşile dönecek ve yazı siyah olacak */
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong{
+    /* Eğer tuşa wrong class'ı eklenirse kırmızıya dönecek. */
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn, .control-btn{
+    /* Start ve Next tuşları için özellikler */
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    grid-template-columns: repeat(1.5rem, auto);
+}
+
+.controls {
+    /* Kontroller için özellikler */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    /* Görünmemesini istediklerimiz burda olucak */
+    display: none;
+}
+
+
+.controls.btn-grid {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* hehehehehehe */
+.justice{
+    padding: 10px 110px;
+}
+
+
+
+.list-btn{
+    justify-content: center;
+    align-items: center;
+}
+
+.paneltitle{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.kart{
+    position: relative;
+}
+
+
+.düzenle {
+    --hue: var(--hue-duzenle);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    outline: none;
+
+    /* Geri dönüşüm sonraki nesiller adına önemli heheheheh*/
+}
+
+.sil {
+    --hue: var(--hue-sil);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    outline: none;
+    position: absolute;
+    right: 5px;
+
+    /* Geri dönüşüm sonraki nesiller adına önemli heheheheh*/
+
+}
+
+
+
+/* Buradaki hiç bir şey ChatGPT tarafından yapılmadı sadece öğrenmek için üşenmeden yazıyorum */

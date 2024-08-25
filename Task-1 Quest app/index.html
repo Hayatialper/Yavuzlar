@@ -1,0 +1,118 @@
+
+
+<!-- Buradaki hiç bir şey ChatGPT tarafından yapılmadı sadece öğrenmek için üşenmeden yazıyorum -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Soru Aplikasyonu</title>
+</head>
+
+<body>
+    <!-- Konteynır kurduk -->
+<div class="container">
+<!-- Konteynır içerisine soruları ve kontrolleri düzenleyebilmek adına konteynır yaptık -->
+    <div id="question-container" class="hide"> 
+        <!-- Soru Konteynırına gözükmemesi için "hide" class'ı ekledik -->
+
+        <!-- Soru konteynırı -->
+        <div id="question">Soru</div>
+
+        <!-- Sorular için cevap kontetnırı -->
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+
+    </div>
+
+    
+          
+    
+    
+    <div class="controls btn-grid">
+        <button id="start-btn" class="start-btn btn justice">Start</button>
+        <button id="control-btn" class="control-btn btn">Soru Yönetim paneli</button>
+        <!-- Kontrol Konteynırı -->
+        <button id="next-btn" class="start-btn btn hide">Next</button>
+        <!-- Next tuşuna sayfada ilk açıldığında gözükmemesi adına "hide" class'ı ekledik. -->
+        <div id="paneltitle" class="hide"><h2>Yavuzlar soru uygulaması yönetim paneli</h2></div> 
+        <button id="list-btn" class="list-btn btn hide">Soruları Listele</button>
+        <button id="home-btn" class="home-btn btn hide">Anasayfa</button>
+         
+        
+    </div>
+
+
+    <div id="arama-container" class="arama btn-grid">
+        <input id="arama" type="search" class="hide">
+    </div>
+
+    <!-- Soruları burdan göstericez -->
+    
+    
+    <!-- Soru template'i -->
+     <template data-question-template>
+        <div id="arama-kartları" class="hide">
+            <div id="kart" class="kart">
+                <div class="header btn">    
+                        <button id="düzenle" class="düzenle">Düzenle</button>
+                        <button id="sil" class="sil">Sil</button>   
+                    </div>
+            </div>
+        </div>
+     </template>
+
+
+
+
+</div>
+</html>
+
+<!-- Buradaki hiç bir şey ChatGPT tarafından yapılmadı sadece öğrenmek için üşenmeden yazıyorum -->
+
+
+
+<!-- Şimdi burada planlar olacak -->
+<!-- 1. Soru İşlemleri: 
+a. Soru Ekleme ***on it
+b. Soru Silme ***on it
+c. Soru Düzenleme ***on it
+d. Soru Arama ***on it
+e. Soru Zorluk Derecesi Eklensin ***on it
+f. Soru Başlatma: 
+    i. Rastgele Sorular Gelsin  ***done
+    ii. Sorular Doğru Gelince Puan Alsın 
+2. Ek Kurallar: 
+a. Pure HTML, CSS ve JavaScript kullanılmalı. Ek kütüphane kullanılmamalıdır. ***on it
+b. Yapay zekâ kullanımı yasaktır. Tespit edildiği takdirde görev geçersiz sayılır. ***on it
+ --> 
+
+
+<!-- Başlangıç ekranında Yönetim paneli ve sorular olsun -->
+
+<!-- Yönetim Paneli -->
+    <!-- Yönetim paneline giriş yapıldığında "Yavuzlar soru uygulaması yönetim paneli" yazsın ve aşağısında Soruları listele olsun. -->
+    <!-- Soru eklemede Zorluk, -->
+<!-- Soru paneli -->
+    <!-- Buraya bir puan sistemi eklenmeli. Zorluk derecesi eklenmeli. -->
+
+
+<!-- Yapılacaklar listesi:
+    1-  Başlangıç ekranında start'a ek olarak Yavuzlar yönetici paneli eklenmeli. Yönetici paneline tıklandığında JS ile Start tuşu gizlenmeli ve eklenmiş olan Title ve Soru düzenleme tuşu gözükmeli.***done
+    2-  Yönetici paneli eklendiğinde bütün her şey hide'da kalıp yeni bir div içerisinde yer alan Title ve Soru düzenleme kısmı eklenmeli. ***on it
+    3-  Soru düzenleme kısmı için login ve useradd gibi bir sistem oluşturulmalı.
+    4-  Soru sistemi yeniden oluşturulmalı. Böylece "kolay - orta - zor" şeklinde düzenleme yapılabilmeli.
+    5-  Soru arama eklenmeli
+    6-  Doğru yapılan sorular için puan değeri oluşturulmalı bunun için yeni bir div yapılabilir soru konteynırı içerisinde.
+
+
+
+
+-->
