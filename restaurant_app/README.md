@@ -12,3 +12,7 @@ Update2:
     Çalıştırmak için dosyanın kök dizinine gidip "docker-compose up" yapmalısınız. "docker-compose down" ile kapatabilirsiniz.
     Dosya yükleme sorunu çözüldü.
     Database sorunu çözüldü
+
+
+Update3:
+Bu ödev TASK 3'tür.
