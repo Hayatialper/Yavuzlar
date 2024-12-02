@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2e073f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Quiz sayfası için */
+
+.quizcontainer{
+    /* Konteynır için özellikler */
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    /* Gölgelendirme */
+    box-shadow: 0 0 10px 2px;
+    align-self: center;
+    display: flex;
+    margin-top: 20vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.soru{
+    text-align: center;
+}
+
+.cevaplar{
+    margin-top: 50px;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 50;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+
+}
+
+#controlButtons{
+    /* Start ve Next tuşları için özellikler */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+}
+
+

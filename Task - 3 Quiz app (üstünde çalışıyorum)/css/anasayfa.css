@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2e073f;
+
+}
+
+.container{
+display: flex;
+align-items: flex-start;
+}
+
+/* İnanamıyorum hayatımın en zor image resolutionu */
+.container .logo img{ 
+    height: 99vh;
+    width: auto;
+    margin-right: 50vh;
+}
+.container .buttons button{
+    flex-direction: column;
+    display: flex;
+    margin-top: 25vh;
+
+
+}
+.container .buttons h1{
+    color: #ffffff;
+    margin-top: 35px
+
+}
+
+
+
+                        
+                            
+@import url('https://fonts.googleapis.com/css2?Roboto&display=swap');
+
+.container .buttons .btn {
+    cursor: pointer; border: solid rgb(204, 204, 204); font-family: Roboto; font-size: 28px; color: rgb(0, 0, 0); padding: 0.5vh 15vh; transition: 1888ms; width: 335px; box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; border-radius: 25px; background: rgb(235, 211, 248); font-weight: 100; --hover-width: 300px; --hover-color: #000000; --hover-bgc: #ffffff; --hover-borderc: #ffffff;
+}
+
+.container .buttons .btn:hover{
+    
+    color: rgb(255, 255, 255);
+    width: 335px;
+    background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
+}
+
